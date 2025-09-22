@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+langchain
+chromadb
+openai
+python-dotenv
+pymupdf
+loguru
+httpx
+pypdf
+python-docx
+streamlit
+langchain-community
+langchain-openai
+langchain-chroma
