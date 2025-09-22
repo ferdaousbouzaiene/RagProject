@@ -1,19 +1,18 @@
-# Minimal Retrieval-Augmented Generation Pipeline
+#  Retrieval-Augmented Generation Pipeline - – Document & URL QA
 
-Lightweight and production-ready RAG pipeline built with FastAPI, LangChain, OpenAI, and ChromaDB. It exposes a single endpoint that uses vector similarity to retrieve document context about Python, Golang and Julia and generate grounded answers for Questions about these programming languages using an LLM (GPT3.5T).
+Minimal Retrieval-Augmented Generation (RAG) pipeline using FastAPI, LangChain, OpenAI, and ChromaDB.
+Now supports document uploads (PDF, TXT, DOCX) and URL ingestion for grounded question answering.
 
 
 ---
 
 ##  Features
 
-- 📄 **Document Ingestion** (PDF -> chunking -> embedding)
+- 📄 **Multi-format ingestion** (PDF -> chunking -> embedding)
 - 🔍 **Vector-based Retrieval** via Chroma
 - 🧠 **Grounded LLM Generation** (OpenAI GPT-3.5T)
-- 📊 **Structured Logging & Observability**
-- 🛡️ **Secure API Key Handling**
-- 🧪 **Basic Integration Tests**
-- 🐳 **Fully Dockerized**
+- 📊 **Source citations for transparency**
+- 🐳 **Docker-ready for easy deployment**
 - 🖼️  **Streamlit front-end for quick testing**
 
 ---
@@ -23,8 +22,11 @@ Lightweight and production-ready RAG pipeline built with FastAPI, LangChain, Ope
 **Clone the Repository**
 
 ```bash
-git clone https://github.com/ferdaousbouzaiene/repoForRagProj
+git clone https://github.com/yourusername/RagProject.git
 cd repoForRagProj
+python3 -m venv venv
+source venv/bin/activate   # or venv\Scripts\activate on Windows
+pip install -r requirements.txt
 ```
 
 ** Add OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxx to .env File **

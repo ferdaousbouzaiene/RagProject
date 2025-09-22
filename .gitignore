@@ -1,2 +1,4 @@
 documents/*
 chroma_db/*
+venv/
+.env
